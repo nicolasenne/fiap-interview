@@ -1,0 +1,148 @@
+/* General */
+:root {
+  --magenta: #ED145B;
+  --bg: #0f1115;
+  --jet: #181b22;
+  --black: #000;
+  --white: #fff;
+  --gray: #acc1cc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--bg);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: min(1120px, 90%);
+  margin: 0 auto;
+}
+
+/* Hero */
+.hero-content {
+  max-width: 560px;
+}
+
+.hero {
+  padding-block: 100px;
+  display: flex;
+  align-items: center;
+  background-image: url("assets/hero-img.webp");
+  background-size: cover;
+}
+
+.uptitle {
+  display: inline-block;
+  color: var(--magenta);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 1.05;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: var(--gray);
+  margin-bottom: 36px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 1px solid var(--magenta);
+  text-decoration: none;
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: background-color .25s,
+    color .25s;
+}
+
+.btn:hover {
+  background-color: var(--magenta);
+  color: var(--jet);
+}
+
+/* Benefits */
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin: 80px 0;
+}
+
+.benefit {
+  background: var(--jet);
+  border: 1px solid var(--gray);
+  padding: 28px;
+}
+
+/* Projects */
+.projects h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 90px;
+}
+
+.project-card {
+  background: var(--jet);
+  padding: 28px;
+  border-radius: 4px;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 70px 20px;
+  background: var(--jet);
+  border-radius: 4px;
+  margin-bottom: 80px;
+}
+
+.cta h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* Footer */
+footer {
+  padding: 32px 0;
+  border-top: 1px solid var(--gray);
+  color: var(--gray);
+  text-align: center;
+  opacity: .5;
+}
+
+/* Responsive */
+@media(max-width:900px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .benefits,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
