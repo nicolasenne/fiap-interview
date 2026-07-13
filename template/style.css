@@ -8,26 +8,58 @@
   --gray: #acc1cc;
 }
 
-/* Container */
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Container */
+.container {}
 
 /* Hero */
+.hero {}
 
+.hero-content {}
+
+.uptitle {}
+
+h1 {}
+
+.hero p {}
 
 /* Button */
+.btn {}
 
+.btn:hover {}
 
 /* Benefits */
+.benefits {}
 
+.benefit {}
 
 /* Projects */
+.project-grid {}
 
+.project-card {}
 
 /* CTA */
+.cta {}
 
+.cta h2 {}
 
 /* Footer */
-
+footer {}
 
 /* Responsive */
-@media(max-width:900px) {}
+@media(max-width:900px) {
+  .container {}
+
+  .hero h1 {}
+
+  .benefits,
+  .project-grid {}
+}
