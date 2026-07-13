@@ -40,7 +40,6 @@ body {
 }
 
 .uptitle {
-  display: inline-block;
   color: var(--magenta);
   font-weight: 700;
 }
@@ -108,7 +107,6 @@ h1 {
 
 .cta h2 {
   margin-bottom: 30px;
-  font-size: 2rem;
 }
 
 /* Footer */
